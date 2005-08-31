@@ -1,0 +1,52 @@
+Encode::EUCJPMS version 0.1
+========
+
+NAME
+       Encode::EUCJPMS - eucJP-ms
+
+SYNOPSIS
+       use Encode::EUCJPMS;
+         use Encode qw/encode decode/;
+         $eucJP_ms = encode("eucJP-ms", $utf8);
+         $utf8   = decode("eucJP-ms", $euc_jp);
+
+ABSTRACT
+       This module implements encodings that covers eucJP-ms.
+       Encodings supported are as follows.
+
+         Canonical     Alias                                      Description
+         --------------------------------------------------------------------
+         eucJP-ms      qr/\beuc-?jp-?ms$/i                       eucJP-ms
+                       qr/\bcp51932$/i
+         --------------------------------------------------------------------
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+If you want to add your encoding to Encode's demand-loading list
+(so you don't have to "use Encode::YourEncoding"), run
+
+   enc2xs -C
+
+DEPENDENCIES
+
+This module requires perl version 5.7.3 or later.
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2005 NARUSE, Yui <naruse@airemix.com>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
+SEE ALSO
+       the Encode manpage, the Encode::JP manpage
+
+       Problems and Solutions for Unicode and User/Vendor Defined Characters
+       -- http://www.opengroup.or.jp/jvc/cde/ucs-conv-e.html
