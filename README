@@ -1,52 +1,62 @@
-Encode::EUCJPMS version 0.1
-========
-
 NAME
-       Encode::EUCJPMS - eucJP-ms
+    Encode::EUCJPMS - eucJP-ms
 
 SYNOPSIS
-       use Encode::EUCJPMS;
-         use Encode qw/encode decode/;
-         $eucJP_ms = encode("eucJP-ms", $utf8);
-         $utf8   = decode("eucJP-ms", $euc_jp);
+      use Encode::EUCJPMS;
+      use Encode qw/encode decode/;
+      $eucJP_ms = encode("eucJP-ms", $utf8);
+      $utf8   = decode("eucJP-ms", $euc_jp);
 
 ABSTRACT
-       This module implements encodings that covers eucJP-ms.
-       Encodings supported are as follows.
+    This module implements encodings that covers eucJP-ms. Encodings
+    supported are as follows.
 
-         Canonical     Alias                                      Description
-         --------------------------------------------------------------------
-         eucJP-ms      qr/\beuc-?jp-?ms$/i                       eucJP-ms
-                       qr/\bcp51932$/i
-         --------------------------------------------------------------------
+      Canonical     Alias                                      Description
+      --------------------------------------------------------------------
+      eucJP-ms      qr/\beuc-?jp-?ms$/i                           eucJP-ms
+                    qr/\beuc-?jp-?win$/i
+                    qr/\bcp51932$/i
+      --------------------------------------------------------------------
+
+DESCRIPTION
+    To find out how to use this module in detail, see Encode.
 
 INSTALLATION
+    To install this module type the following:
 
-To install this module type the following:
+       perl Makefile.PL
+       make
+       make test
+       make install
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+    If you want to add eucJP-ms to Encode's demand-loading list (so you
+    don't have to "use Encode::EUCJPMS"), run
 
-If you want to add your encoding to Encode's demand-loading list
-(so you don't have to "use Encode::YourEncoding"), run
+      enc2xs -C
 
-   enc2xs -C
+    to update Encode::ConfigLocal, a module that controls local settings.
+    After that, "use Encode;" is enough to load eucJP-ms on demand.
 
 DEPENDENCIES
+    This module requires perl version 5.7.3 or later.
 
-This module requires perl version 5.7.3 or later.
+AUTHOR
+    NARUSE, Yui <naruse@airemix.com>
 
-COPYRIGHT AND LICENCE
+COPYRIGHT
+    Copyright (C) 2005 NARUSE, Yui <naruse@airemix.com>
 
-Copyright (C) 2005 NARUSE, Yui <naruse@airemix.com>
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. 
+    See <http://www.perl.com/perl/misc/Artistic.html>
 
 SEE ALSO
-       the Encode manpage, the Encode::JP manpage
+    Encode, Encode::JP
 
-       Problems and Solutions for Unicode and User/Vendor Defined Characters
-       -- http://www.opengroup.or.jp/jvc/cde/ucs-conv-e.html
+    Problems and Solutions for Unicode and User/Vendor Defined Characters
+    <http://www.opengroup.or.jp/jvc/cde/ucs-conv-e.html>
+
+    Windows Codepage 932
+    <http://www.microsoft.com/globaldev/reference/dbcs/932.mspx>
+

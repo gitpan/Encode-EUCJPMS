@@ -1,10 +1,11 @@
 #
 # eucJP-ms - EUC-JP with CP932 compatibility
 #
-# $Id$
+# $Id: eucJP-ms.ucm 3 2005-09-01 02:25:37Z naruse $
 #
 <code_set_name> "eucJP-ms"
 <code_set_alias> "euc-jp-ms"
+<code_set_alias> "eucJP-win"
 <code_set_alias> "cp51932"
 <mb_cur_min> 1
 <mb_cur_max> 3
