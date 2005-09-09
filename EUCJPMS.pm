@@ -1,8 +1,8 @@
 #
-# $Id: EUCJPMS.pm 3 2005-09-01 02:25:37Z naruse $
+# $Id: EUCJPMS.pm 4 2005-09-09 02:00:35Z naruse $
 #
 package Encode::EUCJPMS;
-our $VERSION = "0.01";
+our $VERSION = "0.03";
  
 use Encode;
 use XSLoader;

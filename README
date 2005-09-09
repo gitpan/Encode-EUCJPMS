@@ -15,7 +15,7 @@ ABSTRACT
       --------------------------------------------------------------------
       eucJP-ms      qr/\beuc-?jp-?ms$/i                           eucJP-ms
                     qr/\beuc-?jp-?win$/i
-                    qr/\bcp51932$/i
+      cp51932       qr/\bcp51932$/i                   Windows Codepage 932
       --------------------------------------------------------------------
 
 DESCRIPTION
