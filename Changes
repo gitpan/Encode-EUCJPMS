@@ -1,8 +1,16 @@
 #
-# $Id: Changes 4 2005-09-09 02:00:35Z naruse $
+# $Id: Changes 5 2005-10-12 13:46:59Z naruse $
 # Revision history for Perl extension Encode::EUCJPMS.
 #
-$Revision: 4 $ $Date: 2005-09-09 11:00:35 +0900 (金, 09 9 2005) $
+$Revision: 5 $ $Date: 2005-10-12 22:46:59 +0900 (水, 12 10 2005) $
+0.04  Tue Oct 11 03:59:38 2005
+! ucm/eucJP-ms.ucm
+  Fixed: Can't convert User defined characters, multi defined characters,
+  JIS X 0212 without IBM extended characters in eucJP-ms to Unicode
+  http://msyk.at.webry.info/200509/article_5.html
+! ucm/cp51932.ucm
+  Don't convert PUA (U+E000～U+E757) in Unicode to cp51932 convertion
+  http://msyk.at.webry.info/200509/article_5.html
 0.03  Fri Sep 09 10:56:50 2005
 ! ucm/cp51932.ucm
   Added.
