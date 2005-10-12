@@ -1,8 +1,8 @@
 #
-# $Id: EUCJPMS.pm 4 2005-09-09 02:00:35Z naruse $
+# $Id: EUCJPMS.pm 6 2005-10-12 19:43:20Z naruse $
 #
 package Encode::EUCJPMS;
-our $VERSION = "0.03";
+our $VERSION = "0.05";
  
 use Encode;
 use XSLoader;
@@ -10,7 +10,7 @@ XSLoader::load(__PACKAGE__,$VERSION);
 
 Encode::define_alias(qr/\beuc-?jp-?ms$/i =>  '"eucJP-ms"');
 Encode::define_alias(qr/\beuc-?jp-?win$/i => '"eucJP-ms"');
-Encode::define_alias(qr/\bcp51932$/i     =>  '"eucJP-ms"');
+Encode::define_alias(qr/\bcp51932$/i     =>  '"cp51932"');
 
 1;
 __END__
@@ -35,7 +35,7 @@ Encodings supported are as follows.
   --------------------------------------------------------------------
   eucJP-ms      qr/\beuc-?jp-?ms$/i                           eucJP-ms
                 qr/\beuc-?jp-?win$/i
-                qr/\bcp51932$/i
+  cp51932       qr/\bcp51932$/i                   Windows Codepage 932
   --------------------------------------------------------------------
 
 =head1 DESCRIPTION
