@@ -1,5 +1,5 @@
 NAME
-    Encode::EUCJPMS - eucJP-ms
+    Encode::EUCJPMS - Microsoft Compatible Encodings for Japanese
 
 SYNOPSIS
       use Encode::EUCJPMS;
@@ -8,14 +8,16 @@ SYNOPSIS
       $utf8   = decode("eucJP-ms", $euc_jp);
 
 ABSTRACT
-    This module implements encodings that covers eucJP-ms. Encodings
-    supported are as follows.
+    This module implements Microsoft compatible encodings for Japanese.
+    Encodings supported are as follows.
 
       Canonical     Alias                                      Description
       --------------------------------------------------------------------
       eucJP-ms      qr/\beuc-?jp-?ms$/i                           eucJP-ms
                     qr/\beuc-?jp-?win$/i
-      cp51932       qr/\bcp51932$/i                   Windows Codepage 932
+      cp51932       qr/\bcp51932$/i                 Windows Codepage 51932
+      cp50220                                       Windows Codepage 50220
+      cp50221                                       Windows Codepage 50221
       --------------------------------------------------------------------
 
 DESCRIPTION
@@ -44,7 +46,7 @@ AUTHOR
     NARUSE, Yui <naruse@airemix.com>
 
 COPYRIGHT
-    Copyright (C) 2005 NARUSE, Yui <naruse@airemix.com>
+    Copyright (C) 2005-2006 NARUSE, Yui <naruse@airemix.com>
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
