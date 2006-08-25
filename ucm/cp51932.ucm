@@ -1,7 +1,7 @@
 #
 # cp51932 - Microsoft Windows Codepage 51932 (EUC - Japanese)
 #
-# $Id: cp51932.ucm 5 2006-06-23 17:26:15Z naruse $
+# $Id: cp51932.ucm 6 2006-08-25 22:28:38Z naruse $
 #
 <code_set_name> "cp51932"
 <mb_cur_min> 1

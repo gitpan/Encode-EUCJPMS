@@ -1,16 +1,17 @@
 #
-# $Id: EUCJPMS.pm 5 2006-06-23 17:26:15Z naruse $
+# $Id: EUCJPMS.pm 7 2006-08-25 22:45:46Z naruse $
 #
 package Encode::EUCJPMS;
 use strict;
-our $VERSION = "0.06";
+our $VERSION = "0.07";
  
 use Encode qw(:fallbacks);
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
 
-Encode::define_alias(qr/\beuc-?jp-?ms$/i =>  '"eucJP-ms"');
+Encode::define_alias(qr/\beuc-?jp-?ms$/i  => '"eucJP-ms"');
 Encode::define_alias(qr/\beuc-?jp-?win$/i => '"eucJP-ms"');
+Encode::define_alias(qr/\bglibc-EUC_JP_MS-2.3.3$/i => '"eucJP-ms"');
 
 for my $name ('cp50220','cp50221'){ #, 'cp50222'
     my $h2z     = ($name eq 'cp50220')    ? 1 : 0;

@@ -23,7 +23,8 @@
 # Encoding description: 
 # Encoding name: EUC-JP-MS
 #
-<code_set_name>               "glibc-EUC_JP_MS-2.3.3"
+<code_set_name>  "eucJP-ms"
+<code_set_alias> "glibc-EUC_JP_MS-2.3.3"
 <code_set_alias> "eucjp-ms"
 <code_set_alias> "euc-jp-ms"
 <code_set_alias> "eucjpms"
